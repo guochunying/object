@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<script>
+//第一种去重方法
+	var str=[1,2,3,6,2,8,3,5,1]
+
+	function sum(a){
+		var temp=[]
+		for(var i=0;i<a.length;i++){
+			if(temp.indexOf(a[i])==-1){
+				temp.push(a[i])
+			}	
+		}
+		return temp;
+	}
+	console.log(sum(str))
+
+</script>
+	
+
+</body>
+</html>
